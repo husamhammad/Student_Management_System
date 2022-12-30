@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Home</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      html {
+         font-size: 62.5%;
+         font-family: "Lato", sans-serif;
+      }
+
+      body {
+         background-color: #eee;
+         color: #000;
+         padding-top: 100px;
+      }
+
+      h1 {
+         font-size: 4rem;
+         font-weight: 700;
+         letter-spacing: 2px;
+         text-transform: uppercase;
+         margin-bottom: 1rem;
+         color: #4c579a;
+      }
+
+      .articles {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      .features {
+         display: grid;
+         max-width: 90rem;
+         column-gap: 2rem;
+         row-gap: 2rem;
+         grid-template-columns: 1fr 1fr;
+      }
+
+      .features1 {
+         display: flex;
+         flex-direction: column;
+         max-width: 90rem;
+      }
+
+      .item {
+         display: flex;
+         flex-direction: column;
+         background-image: linear-gradient(to right bottom, #dee2e6, #dbdbdb);
+         overflow: hidden;
+         border-radius: 10px;
+         position: relative;
+         padding-bottom: 4px;
+         margin-bottom: 11px;
+      }
+
+      .item-header {
+         margin: 2rem 2rem;
+      }
+
+      .item-title {
+         font-size: 2.4rem;
+         font-weight: 400;
+         text-align: center;
+
+      }
+
+      .item-link:link,
+      .item-link:visited {
+         text-decoration: none;
+         color: #4c579a;
+         margin-top: auto;
+      }
+   </style>
+</head>
+
+<body>
+   <section class="articles">
+      <h1>Dashboard</h1>
+      <div class="features1">
+         <div class="item item1">
+            <div class="item-header">
+               <h3 class="item-title"><a class="item-link" href="/students" target="blank">Students List </a></h3>
+            </div>
+         </div>
+         <div class="item item1">
+            <div class="item-header">
+               <h3 class="item-title"><a class="item-link" href="/courses" target="blank">Courses List </a></h3>
+            </div>
+         </div>
+         <div class="item item1">
+            <div class="item-header">
+               <h3 class="item-title"><a class="item-link" href="/schedules" target="blank">Schedules list</a>
+               </h3>
+            </div>
+         </div>
+      </div>
+   </section>
+   <hr style="width: 70%; margin:45px auto">
+   <section class="articles">
+      <h1>API Show</S></h1>
+      <div class="features">
+         <div class="item item1">
+            <div class="item-header">
+               <h3 class="item-title"><a class="item-link" href="/api/version/students" target="blank">Students List</a>
+               </h3>
+            </div>
+         </div>
+         <div class="item item1">
+            <div class="item-header">
+               <h3 class="item-title"><a class="item-link" href="/api/version/students/1" target="blank">Student Details
+                     (show for specific id) </a></h3>
+            </div>
+         </div>
+      </div>
+   </section>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</body>
+
+</html>
